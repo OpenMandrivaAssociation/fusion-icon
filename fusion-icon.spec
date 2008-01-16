@@ -24,7 +24,7 @@ Patch0: fusion-icon-20071127-icon32.patch
 License: GPL
 BuildRoot: %{_tmppath}/%{name}-root
 BuildArch: noarch
-BuildRequires: python
+BuildRequires: python-devel
 Requires: compizconfig-python
 Requires: pygtk2.0
 Requires: mesa-demos
