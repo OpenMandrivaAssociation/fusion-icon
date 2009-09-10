@@ -1,6 +1,6 @@
 %define name fusion-icon
 %define version 0.0
-%define rel 2
+%define rel 3
 %define git 20071127
 
 %if  %{git}
