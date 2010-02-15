@@ -1,7 +1,7 @@
 %define name fusion-icon
-%define version 0.0
-%define rel 4
-%define git 20071127
+%define version 0.1
+%define rel 1
+%define git 20100215
 
 %if  %{git}
 # git clone git://anongit.compiz-fusion.org/users/crdlb/fusion-icon
