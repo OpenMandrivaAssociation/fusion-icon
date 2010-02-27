@@ -1,6 +1,6 @@
 %define name fusion-icon
 %define version 0.1
-%define rel 1
+%define rel 2
 %define git 20100215
 
 %if  %{git}
@@ -27,7 +27,11 @@ BuildArch: noarch
 BuildRequires: desktop-file-utils python-devel
 Requires: compizconfig-python
 Requires: pygtk2.0
+%if %mdkversion >= 201010
 Requires: glxinfo
+%else
+requires: mesa-demos
+%endif
 Requires: xvinfo
 
 %description
