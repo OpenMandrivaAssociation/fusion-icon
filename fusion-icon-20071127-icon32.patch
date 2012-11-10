@@ -1,0 +1,11 @@
+diff -p -up fusion-icon-20071127/setup.py.icon32 fusion-icon-20071127/setup.py
+--- fusion-icon-20071127/setup.py.icon32	2007-09-17 03:31:44.000000000 +0000
++++ fusion-icon-20071127/setup.py	2008-01-10 18:00:57.000000000 +0000
+@@ -63,6 +63,7 @@ packages.extend(available_interfaces.val
+ data_files = [
+ 	('share/icons/hicolor/22x22/apps',['images/22x22/fusion-icon.png']),
+ 	('share/icons/hicolor/24x24/apps',['images/24x24/fusion-icon.png']),
++	('share/icons/hicolor/32x32/apps',['images/32x32/fusion-icon.png']),
+ 	('share/icons/hicolor/48x48/apps',['images/48x48/fusion-icon.png']),
+ 	('share/icons/hicolor/scalable/apps',['images/scalable/fusion-icon.svg']),
+ 	('share/applications',['fusion-icon.desktop']),
