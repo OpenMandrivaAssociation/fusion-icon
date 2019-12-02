@@ -53,7 +53,7 @@ This package provides Qt gui to the application.
 If you don't use Qt5 based desktop then %{name} should suffice.
 
 %prep
-%autosetup -n %{name}-%{version} -p1
+%autosetup -n %{name}-v%{version} -p1
 
 # Fix libdir in data.py
 sed -i "s|MULTILIBDIR|%{_libdir}|g" FusionIcon/data.py
