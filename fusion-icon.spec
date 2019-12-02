@@ -70,11 +70,11 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{distname}.desktop
 %files
 %doc NEWS VERSION
 %license COPYING
-%{_bindir}/%{distname}
-%{_datadir}/applications/%{distname}.desktop
-%{_datadir}/metainfo/%{distname}.appdata.xml
-%{_datadir}/icons/hicolor/*/apps/%{distname}.png
-%{_datadir}/icons/hicolor/scalable/apps/%{distname}.svg
+%{_bindir}/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/metainfo/%{name}.appdata.xml
+%{_datadir}/icons/hicolor/*/apps/%{name}.png
+%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 
 %dir %{python3_sitelib}/FusionIcon/
 %{python_sitelib}/FusionIcon/interface_gtk/
