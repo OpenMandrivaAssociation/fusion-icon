@@ -65,7 +65,7 @@ sed -i "s|MULTILIBDIR|%{_libdir}|g" FusionIcon/data.py
 %py_install
 
 %check
-desktop-file-validate %{buildroot}%{_datadir}/applications/%{distname}.desktop
+desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
 %doc NEWS VERSION
