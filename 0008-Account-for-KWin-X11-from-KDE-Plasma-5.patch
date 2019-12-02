@@ -1,0 +1,30 @@
+From 15a1548a7e982c37b83d61a840a756e094f722a4 Mon Sep 17 00:00:00 2001
+From: Alexei Sorokin <sor.alexei@meowr.ru>
+Date: Fri, 8 Jun 2018 16:28:10 +0300
+Subject: [PATCH 8/9] Account for KWin (X11) from KDE Plasma 5
+
+---
+ FusionIcon/data.py | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+diff --git a/FusionIcon/data.py b/FusionIcon/data.py
+index a91f33f..c2db641 100644
+--- a/FusionIcon/data.py
++++ b/FusionIcon/data.py
+@@ -73,9 +73,13 @@ wms = {
+ 		 'Mutter', 'gnome', None, None,),
+ 
+ 	'kwin':
+-		('kde', ['kwin', '--replace'],
++		('kwin_x11', ['kwin_x11', '--replace'],
+ 		 'KWin', 'kde', None, None),
+ 
++	'kwin4':
++		('kwin', ['kwin', '--replace'],
++		 'KWin4', 'kde', None, None),
++
+ 	'xfwm4':
+ 		('xfwm4', ['xfwm4'],
+ 		 'Xfwm4', 'xfce', ['noreplace'], ['killall', 'xfwm4']),
+-- 
+2.19.2

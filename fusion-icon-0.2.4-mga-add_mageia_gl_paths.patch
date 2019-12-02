@@ -1,0 +1,18 @@
+Index: fusion-icon-0.2.2/FusionIcon/data.py
+===================================================================
+--- fusion-icon-0.2.2/FusionIcon/data.py
++++ fusion-icon-0.2.2/FusionIcon/data.py	2017-02-06 02:10:22.448063204 +0300
+@@ -31,6 +31,13 @@
+ 	# debian
+ 	'/usr/lib/fglrx/diversions/libGL.so.1.2',
+ 	'/usr/share/nvidia-glx/diversions/libGL.so.1.2',
++	# mageia
++	'MULTILIBDIR/libGL.so.1.2.0',
++	'MULTILIBDIR/fglrx/libGL.so.1.2',
++	'MULTILIBDIR/nvidia340/libGL.so.1',
++	'MULTILIBDIR/nvidia-current/libGL.so.1',
++	'MULTILIBDIR/nvidia390/libGL.so.1',
++	'MULTILIBDIR/nvidia340/libGL.so.1',
+ )
+ 
+ compiz_args = ['ccp', '--replace', '--sm-disable', '--ignore-desktop-hints']
