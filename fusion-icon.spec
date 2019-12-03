@@ -2,7 +2,7 @@
 
 Name:		fusion-icon
 Version:	0.2.4
-Release:	2
+Release:	3
 Summary:	Simple tray icon for compiz
 Group:		System/X11
 License:	GPLv2+
@@ -23,7 +23,10 @@ BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 
-Recommends:	compizconfig-python
+#Fow now we package original compiz 0.9.X and not a compiz reloaded (fork of 0.8 series). 
+#So now make recommends python-compizconfig from 0.9 series to avoid conflict.
+#Recommends:	compizconfig-python
+Recommends: python-compizconfig
 Requires:	python-gi
 Requires:	glxinfo
 Requires:	xvinfo
